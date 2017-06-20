@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Facebook"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_web"
+        android:orderInCategory="100"
+        android:title="Website"
+        app:showAsAction="never" />
+
+    <group>
+
+        <item
+            android:id="@+id/action_phone"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_call_btn"
+            android:title="Ratings"
+            app:showAsAction="always" />
+
+
+        <!--<item-->
+            <!--android:id="@+id/action_book"-->
+            <!--android:orderInCategory="100"-->
+            <!--android:icon="@drawable/ic_book"-->
+            <!--android:title="Ratings"-->
+            <!--app:showAsAction="always" />-->
+
+
+    </group>
+</menu>

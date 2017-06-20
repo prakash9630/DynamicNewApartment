@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/contact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="75">
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+
+                        android:src="@drawable/contact"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/place_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Swyambhu Marg, Kathmandu, Nepal"/>
+                    <TextView
+
+                        android:id="@+id/ph_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingTop="5dp"
+                        android:text="+977 (01) 427 4837"/>
+
+                    <TextView
+
+                        android:id="@+id/mobile_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingBottom="5dp"
+                        android:text="+977 980 109 8941"/>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:id="@+id/generalenquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="For general enquiries: "/>
+                        <TextView
+
+                            android:id="@+id/link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:autoLink="web"
+                            android:layout_centerInParent="true"
+                            android:linksClickable="true"
+                            android:text="info@retreatapartment.com "/>
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:id="@+id/salesenquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="For sales enquiries: "/>
+                        <TextView
+
+                            android:id="@+id/link_sales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:autoLink="web"
+                            android:layout_centerInParent="true"
+                            android:linksClickable="true"
+                            android:text="sales@retreatapartment.com "/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:id="@+id/call_btn"
+                            android:text="call"
+                            android:drawableLeft="@drawable/telephone"
+                            android:textColor="#ffffff"
+                            android:theme="@style/MyButton"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/email_btn"
+                            android:drawableLeft="@drawable/mail"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="100dp"
+                            android:text="Email"
+                            android:theme="@style/MyButton"
+
+                            android:textColor="#ffffff"
+                            android:layout_height="50dp" />
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@color/primarybuttoncolor"
+                    android:layout_weight="25">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="FOLLOW US ON SOCIAL MEDIA"
+                        android:textColor="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/fb_icon"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/fb"/>
+                        <ImageView
+                            android:id="@+id/twiter_icon"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/t"/>
+                        <ImageView
+                            android:id="@+id/gplus_icon"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/gplus"/>
+                        <ImageView
+                            android:id="@+id/youtube_icon"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/youtube"/>
+                        <ImageView
+                            android:id="@+id/insta_icon"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/i"/>
+                        <ImageView
+                            android:id="@+id/p_icond"
+                            android:padding="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/p"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
